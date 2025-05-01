@@ -1,0 +1,55 @@
+\doxysection{Aula.\+h}
+\hypertarget{_aula_8h_source}{}\label{_aula_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Utiizador\ on\ 12/10/2023.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ AED2324\_P03\_AULA\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ AED2324\_P03\_AULA\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_aula}{Aula}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ vector<pair<int,string>>\ alunos\_na\_aula;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{string}\ dia;\ \textcolor{comment}{//da\ semana}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{string}\ codigo\_cadeira;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{string}\ tipo\_de\_aula;\ \textcolor{comment}{//\ (T/TP/PL)}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{float}\ hora\_inicio;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{float}\ duracao;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{string}\ codigo\_turma;}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ vector<pair<int,string>>\&\ get\_alunos\_na\_aula()\{\ \textcolor{keywordflow}{return}\ \ alunos\_na\_aula;\};}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_aula}{Aula}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ codigo\_turma\_,\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ codigo\_cadeira\_,\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ dia\_\ \ ,\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\&\ hora\_inicio\_\ ,\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\&\ duracao\_,\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ tipo\_de\_aula\_):\ codigo\_turma\ (codigo\_turma\_\ ),\ codigo\_cadeira\ (codigo\_cadeira\_),\ dia(dia\_)\ ,hora\_inicio\ (hora\_inicio\_),\ duracao(duracao\_),\ tipo\_de\_aula(tipo\_de\_aula\_)\ \{\}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_aula_a7f0ff882db03939ad1f8ae0364852981}{get\_dia}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_aula_a592fb092ac2ac96bfe6cf7f848e60435}{get\_codigo\_cadeira}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_aula_a8a0cf30b0df64860ac551a5db3b2d84e}{get\_tipo\_de\_aula}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_aula_a4f318055b037b9f3a02ff178c9fe4ebe}{get\_hora\_inicio}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_aula_aae69315e41ddbbfc52e7b9fad932e357}{get\_duracao}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_aula_a1be0af5f9d1dd669ba80fddd946eed4a}{get\_codigo\_turma}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_aula_a2e93f11453f0c41c642fbf7e6a8a218c}{print\_aula}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_aula_af287e390985e6c424702da0b8f6c9514}{ver\_alunos\_na\_turma}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_aula_a82a6859d0a3cc7b1ba272ca2cd8e02e2}{aula\_compativel}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_aula}{Aula}}\&\ outra\_aula);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_aula_a826c6fff09c21de8fdda78366067d071}{esta\_na\_aula}}(\ \textcolor{keywordtype}{int}\ aluno\_ID\_);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ \ \ \ Aluno\ get\_aluno(int\ aluno\_ID\_);}}
+\DoxyCodeLine{00037\ \textcolor{comment}{}}
+\DoxyCodeLine{00038\ \textcolor{comment}{\ \ \ \ vector<Aluno>\ get\_alunos\_na\_turma();}}
+\DoxyCodeLine{00039\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_aula_abdf78ffeb0a0f18393efe517dd4b4c00}{adicionar\_aluno}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ aluno\_id,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ aluno\_nome);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_aula}{Aula}}\&\ outra\_aula)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>codigo\_cadeira\ ==\ outra\_aula.codigo\_cadeira;}
+\DoxyCodeLine{00043\ \ \ \ \ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator<(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_aula}{Aula}}\&\ outra\_aula)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>codigo\_cadeira\ <\ outra\_aula.codigo\_cadeira;}
+\DoxyCodeLine{00046\ \ \ \ \ \}}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//AED2324\_P03\_AULA\_H}}
+
+\end{DoxyCode}

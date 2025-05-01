@@ -1,0 +1,175 @@
+\doxysection{Aula Class Reference}
+\hypertarget{class_aula}{}\label{class_aula}\index{Aula@{Aula}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_aula_a277338ac6165108ce2b5c35daa9af146}\label{class_aula_a277338ac6165108ce2b5c35daa9af146} 
+vector$<$ pair$<$ int, string $>$ $>$ \& {\bfseries get\+\_\+alunos\+\_\+na\+\_\+aula} ()
+\item 
+\Hypertarget{class_aula_a75ee4099d4e948cbb9984b5a5bd9ceec}\label{class_aula_a75ee4099d4e948cbb9984b5a5bd9ceec} 
+{\bfseries Aula} (const string \&codigo\+\_\+turma\+\_\+, const string \&codigo\+\_\+cadeira\+\_\+, const string \&dia\+\_\+, const float \&hora\+\_\+inicio\+\_\+, const float \&duracao\+\_\+, const string \&tipo\+\_\+de\+\_\+aula\+\_\+)
+\item 
+string \mbox{\hyperlink{class_aula_a7f0ff882db03939ad1f8ae0364852981}{get\+\_\+dia}} () const
+\item 
+string \mbox{\hyperlink{class_aula_a592fb092ac2ac96bfe6cf7f848e60435}{get\+\_\+codigo\+\_\+cadeira}} () const
+\item 
+string \mbox{\hyperlink{class_aula_a8a0cf30b0df64860ac551a5db3b2d84e}{get\+\_\+tipo\+\_\+de\+\_\+aula}} () const
+\item 
+float \mbox{\hyperlink{class_aula_a4f318055b037b9f3a02ff178c9fe4ebe}{get\+\_\+hora\+\_\+inicio}} () const
+\item 
+float \mbox{\hyperlink{class_aula_aae69315e41ddbbfc52e7b9fad932e357}{get\+\_\+duracao}} () const
+\item 
+string \mbox{\hyperlink{class_aula_a1be0af5f9d1dd669ba80fddd946eed4a}{get\+\_\+codigo\+\_\+turma}} () const
+\item 
+void \mbox{\hyperlink{class_aula_a2e93f11453f0c41c642fbf7e6a8a218c}{print\+\_\+aula}} ()
+\item 
+void \mbox{\hyperlink{class_aula_af287e390985e6c424702da0b8f6c9514}{ver\+\_\+alunos\+\_\+na\+\_\+turma}} ()
+\item 
+bool \mbox{\hyperlink{class_aula_a82a6859d0a3cc7b1ba272ca2cd8e02e2}{aula\+\_\+compativel}} (const \mbox{\hyperlink{class_aula}{Aula}} \&outra\+\_\+aula)
+\item 
+bool \mbox{\hyperlink{class_aula_a826c6fff09c21de8fdda78366067d071}{esta\+\_\+na\+\_\+aula}} (int aluno\+\_\+\+ID\+\_\+)
+\item 
+void \mbox{\hyperlink{class_aula_abdf78ffeb0a0f18393efe517dd4b4c00}{adicionar\+\_\+aluno}} (const int aluno\+\_\+id, const string \&aluno\+\_\+nome)
+\item 
+\Hypertarget{class_aula_ac7e9efce8bedd5c242b780e210d7ecc0}\label{class_aula_ac7e9efce8bedd5c242b780e210d7ecc0} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_aula}{Aula}} \&outra\+\_\+aula) const
+\item 
+\Hypertarget{class_aula_a382f13a2b0bf0782049764cc201d220e}\label{class_aula_a382f13a2b0bf0782049764cc201d220e} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{class_aula}{Aula}} \&outra\+\_\+aula) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_aula_abdf78ffeb0a0f18393efe517dd4b4c00}\label{class_aula_abdf78ffeb0a0f18393efe517dd4b4c00} 
+\index{Aula@{Aula}!adicionar\_aluno@{adicionar\_aluno}}
+\index{adicionar\_aluno@{adicionar\_aluno}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{adicionar\_aluno()}{adicionar\_aluno()}}
+{\footnotesize\ttfamily void Aula\+::adicionar\+\_\+aluno (\begin{DoxyParamCaption}\item[{const int}]{aluno\+\_\+id,  }\item[{const string \&}]{aluno\+\_\+nome }\end{DoxyParamCaption})}
+
+Adiciona um aluno ao vetor de alunos da aula. Os alunos ficam guardados por pares \texorpdfstring{$<$}{<} codigo de aluno, nome de aluno \texorpdfstring{$>$}{>} 
+\begin{DoxyParams}{Parameters}
+{\em int} & com o codigo do aluno \\
+\hline
+{\em string} & com o nome do aluno\\
+\hline
+\end{DoxyParams}
+Time complexity\+: O(1) \Hypertarget{class_aula_a82a6859d0a3cc7b1ba272ca2cd8e02e2}\label{class_aula_a82a6859d0a3cc7b1ba272ca2cd8e02e2} 
+\index{Aula@{Aula}!aula\_compativel@{aula\_compativel}}
+\index{aula\_compativel@{aula\_compativel}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{aula\_compativel()}{aula\_compativel()}}
+{\footnotesize\ttfamily bool Aula\+::aula\+\_\+compativel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_aula}{Aula}} \&}]{outra\+\_\+aula }\end{DoxyParamCaption})}
+
+Verifica se duas aulas são compatíveis no mesmo horário 
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{class_aula}{Aula}} & com a aula a qual vamos verificar se é compatível \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se as aulas forem compatíveis, caso contrário false
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_aula_a826c6fff09c21de8fdda78366067d071}\label{class_aula_a826c6fff09c21de8fdda78366067d071} 
+\index{Aula@{Aula}!esta\_na\_aula@{esta\_na\_aula}}
+\index{esta\_na\_aula@{esta\_na\_aula}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{esta\_na\_aula()}{esta\_na\_aula()}}
+{\footnotesize\ttfamily bool Aula\+::esta\+\_\+na\+\_\+aula (\begin{DoxyParamCaption}\item[{int}]{aluno\+\_\+\+ID\+\_\+ }\end{DoxyParamCaption})}
+
+Verifica se um aluno pertence a uma turma 
+\begin{DoxyParams}{Parameters}
+{\em int} & com o código do aluno que quermos verificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se esta na turma e false se o aluno nao pertence a esta turma
+\end{DoxyReturn}
+Time complexity\+: O(log\+N) \Hypertarget{class_aula_a592fb092ac2ac96bfe6cf7f848e60435}\label{class_aula_a592fb092ac2ac96bfe6cf7f848e60435} 
+\index{Aula@{Aula}!get\_codigo\_cadeira@{get\_codigo\_cadeira}}
+\index{get\_codigo\_cadeira@{get\_codigo\_cadeira}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{get\_codigo\_cadeira()}{get\_codigo\_cadeira()}}
+{\footnotesize\ttfamily string Aula\+::get\+\_\+codigo\+\_\+cadeira (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o código da cadeira de uma aula
+
+\begin{DoxyReturn}{Returns}
+string com o código da cadeira
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_aula_a1be0af5f9d1dd669ba80fddd946eed4a}\label{class_aula_a1be0af5f9d1dd669ba80fddd946eed4a} 
+\index{Aula@{Aula}!get\_codigo\_turma@{get\_codigo\_turma}}
+\index{get\_codigo\_turma@{get\_codigo\_turma}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{get\_codigo\_turma()}{get\_codigo\_turma()}}
+{\footnotesize\ttfamily string Aula\+::get\+\_\+codigo\+\_\+turma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o código da turma da aula
+
+\begin{DoxyReturn}{Returns}
+string com o código da turma
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_aula_a7f0ff882db03939ad1f8ae0364852981}\label{class_aula_a7f0ff882db03939ad1f8ae0364852981} 
+\index{Aula@{Aula}!get\_dia@{get\_dia}}
+\index{get\_dia@{get\_dia}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{get\_dia()}{get\_dia()}}
+{\footnotesize\ttfamily string Aula\+::get\+\_\+dia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o dia da semana de uma aula
+
+\begin{DoxyReturn}{Returns}
+string com o dia da semana
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_aula_aae69315e41ddbbfc52e7b9fad932e357}\label{class_aula_aae69315e41ddbbfc52e7b9fad932e357} 
+\index{Aula@{Aula}!get\_duracao@{get\_duracao}}
+\index{get\_duracao@{get\_duracao}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{get\_duracao()}{get\_duracao()}}
+{\footnotesize\ttfamily float Aula\+::get\+\_\+duracao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna a duração de uma aula
+
+\begin{DoxyReturn}{Returns}
+float com a duração
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_aula_a4f318055b037b9f3a02ff178c9fe4ebe}\label{class_aula_a4f318055b037b9f3a02ff178c9fe4ebe} 
+\index{Aula@{Aula}!get\_hora\_inicio@{get\_hora\_inicio}}
+\index{get\_hora\_inicio@{get\_hora\_inicio}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{get\_hora\_inicio()}{get\_hora\_inicio()}}
+{\footnotesize\ttfamily float Aula\+::get\+\_\+hora\+\_\+inicio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna a hora de início da aula
+
+\begin{DoxyReturn}{Returns}
+float com a hora de início
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_aula_a8a0cf30b0df64860ac551a5db3b2d84e}\label{class_aula_a8a0cf30b0df64860ac551a5db3b2d84e} 
+\index{Aula@{Aula}!get\_tipo\_de\_aula@{get\_tipo\_de\_aula}}
+\index{get\_tipo\_de\_aula@{get\_tipo\_de\_aula}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{get\_tipo\_de\_aula()}{get\_tipo\_de\_aula()}}
+{\footnotesize\ttfamily string Aula\+::get\+\_\+tipo\+\_\+de\+\_\+aula (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o tipo de aula\+: Teórica(\+T), Teórico-\/\+Prática(TP) ou Prática Laboratorial(\+PL)
+
+\begin{DoxyReturn}{Returns}
+string com o tipo de aula
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_aula_a2e93f11453f0c41c642fbf7e6a8a218c}\label{class_aula_a2e93f11453f0c41c642fbf7e6a8a218c} 
+\index{Aula@{Aula}!print\_aula@{print\_aula}}
+\index{print\_aula@{print\_aula}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{print\_aula()}{print\_aula()}}
+{\footnotesize\ttfamily void Aula\+::print\+\_\+aula (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Faz print de uma aula
+
+no formato\+: cadeira \texorpdfstring{$\vert$}{|} dia \texorpdfstring{$\vert$}{|} hora de início \texorpdfstring{$\vert$}{|} duração \texorpdfstring{$\vert$}{|} tipo de aula
+
+Time complexity\+: O(1) \Hypertarget{class_aula_af287e390985e6c424702da0b8f6c9514}\label{class_aula_af287e390985e6c424702da0b8f6c9514} 
+\index{Aula@{Aula}!ver\_alunos\_na\_turma@{ver\_alunos\_na\_turma}}
+\index{ver\_alunos\_na\_turma@{ver\_alunos\_na\_turma}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{ver\_alunos\_na\_turma()}{ver\_alunos\_na\_turma()}}
+{\footnotesize\ttfamily void Aula\+::ver\+\_\+alunos\+\_\+na\+\_\+turma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Faz print dos alunos inscritos numa determinada aula
+
+no format\+: nome de aluno \texorpdfstring{$\vert$}{|} código do aluno
+
+Time complexity\+: O(\+N) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Aula.\+h\item 
+Aula.\+cpp\end{DoxyCompactItemize}

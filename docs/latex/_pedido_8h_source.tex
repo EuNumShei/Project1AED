@@ -1,0 +1,49 @@
+\doxysection{Pedido.\+h}
+\hypertarget{_pedido_8h_source}{}\label{_pedido_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Utiizador\ on\ 26/10/2023.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ AED2324\_P03\_PEDIDO\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ AED2324\_P03\_PEDIDO\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pedido}{Pedido}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ n\_ultimo\_pedido;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ numero\_pedido;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{string}\ cadeira\_1;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{string}\ turma\_1;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{string}\ turma\_2;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{string}\ pedido\_q\_foi\_feito;}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_pedido}{Pedido}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\ cadeira\_1\_,\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\ turma\_1\_,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\ turma\_2\_,\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\ pedido\_q\_foi\_feito\_):cadeira\_1(cadeira\_1\_)\ \ ,turma\_1(turma\_1\_)\ ,turma\_2(turma\_2\_)\ ,pedido\_q\_foi\_feito(pedido\_q\_foi\_feito\_)\{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ numero\_pedido\ =\ n\_ultimo\_pedido\ +\ 1;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ n\_ultimo\_pedido\ =\ numero\_pedido;}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ get\_n\_ultimo\_pedido()\{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ n\_ultimo\_pedido;}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ get\_numero\_pedido()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_pedido_a7798fbe7c16d97e5c789143222e4cd67}{get\_cadeira\_1}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_pedido_a7a9241918f462472de027975639935aa}{get\_turma\_1}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_pedido_aa413d09680a17d1f7734434679ed3b31}{get\_turma\_2}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_pedido_a07442a83a1ba4f71e0b9480bccb2475b}{get\_pedido\_q\_foi\_feito}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pedido_ac3824210de7d3dd9f62285a5393196cb}{print\_pedido}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator<(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pedido}{Pedido}}\&\ outro\_pedido)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>numero\_pedido\ <\ outro\_pedido.numero\_pedido;}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//AED2324\_P03\_PEDIDO\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,59 @@
+\doxysection{Turma Class Reference}
+\hypertarget{class_turma}{}\label{class_turma}\index{Turma@{Turma}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_turma_ab0e42d3228c3f80b01143ac30a9a010d}{get\+\_\+codigo\+\_\+turma}} () const
+\item 
+\mbox{\hyperlink{class_horario}{Horario}} \& \mbox{\hyperlink{class_turma_a0eca48d57b6c669a980428e9aae4384c}{get\+\_\+horario\+\_\+turma}} ()
+\item 
+void \mbox{\hyperlink{class_turma_a49716618ffecc288d0095f2157685b7f}{adicionar\+\_\+cadeira}} (const string \&codigo\+\_\+uc)
+\item 
+\Hypertarget{class_turma_a32cccfef1ca832327d74bc409675146a}\label{class_turma_a32cccfef1ca832327d74bc409675146a} 
+{\bfseries Turma} (string codigo\+\_\+turma\+\_\+)
+\item 
+\Hypertarget{class_turma_ac325a2a4ac768223412cd75e315af840}\label{class_turma_ac325a2a4ac768223412cd75e315af840} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_turma}{Turma}} \&outra\+\_\+turma) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_turma_a49716618ffecc288d0095f2157685b7f}\label{class_turma_a49716618ffecc288d0095f2157685b7f} 
+\index{Turma@{Turma}!adicionar\_cadeira@{adicionar\_cadeira}}
+\index{adicionar\_cadeira@{adicionar\_cadeira}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{adicionar\_cadeira()}{adicionar\_cadeira()}}
+{\footnotesize\ttfamily void Turma\+::adicionar\+\_\+cadeira (\begin{DoxyParamCaption}\item[{const string \&}]{codigo\+\_\+uc }\end{DoxyParamCaption})}
+
+Adiciona uma cadeira ao vetor de cadeiras da turma 
+\begin{DoxyParams}{Parameters}
+{\em string} & codigo\+\_\+uc com o código da cadeira que se vai adicionar\\
+\hline
+\end{DoxyParams}
+Time complexity\+: O(1) \Hypertarget{class_turma_ab0e42d3228c3f80b01143ac30a9a010d}\label{class_turma_ab0e42d3228c3f80b01143ac30a9a010d} 
+\index{Turma@{Turma}!get\_codigo\_turma@{get\_codigo\_turma}}
+\index{get\_codigo\_turma@{get\_codigo\_turma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{get\_codigo\_turma()}{get\_codigo\_turma()}}
+{\footnotesize\ttfamily string Turma\+::get\+\_\+codigo\+\_\+turma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o código da turma
+
+\begin{DoxyReturn}{Returns}
+string com o código da turma
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_turma_a0eca48d57b6c669a980428e9aae4384c}\label{class_turma_a0eca48d57b6c669a980428e9aae4384c} 
+\index{Turma@{Turma}!get\_horario\_turma@{get\_horario\_turma}}
+\index{get\_horario\_turma@{get\_horario\_turma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{get\_horario\_turma()}{get\_horario\_turma()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_horario}{Horario}} \& Turma\+::get\+\_\+horario\+\_\+turma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retorna o horário da turma
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_horario}{Horario} que contém o horário da turma
+\end{DoxyReturn}
+Time complexity\+: O(1) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Turma.\+h\item 
+Turma.\+cpp\end{DoxyCompactItemize}

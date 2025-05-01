@@ -1,0 +1,35 @@
+\doxysection{Turma.\+h}
+\hypertarget{_turma_8h_source}{}\label{_turma_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Utiizador\ on\ 12/10/2023.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ AED2324\_P03\_TURMA\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ AED2324\_P03\_TURMA\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Horario.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_turma}{Turma}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{string}\ codigo\_turma;}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_horario}{Horario}}\ horario\_da\_turma;}
+\DoxyCodeLine{00016\ \ \ \ \ vector<string>\ lista\_cadeiras;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_turma_ab0e42d3228c3f80b01143ac30a9a010d}{get\_codigo\_turma}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_horario}{Horario}}\ \&\ \mbox{\hyperlink{class_turma_a0eca48d57b6c669a980428e9aae4384c}{get\_horario\_turma}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_turma_a49716618ffecc288d0095f2157685b7f}{adicionar\_cadeira}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ codigo\_uc);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_turma}{Turma}}(\textcolor{keywordtype}{string}\ codigo\_turma\_):\ codigo\_turma(codigo\_turma\_)\ \{\}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_turma}{Turma}}\&\ outra\_turma)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>codigo\_turma\ ==\ outra\_turma.codigo\_turma;}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//AED2324\_P03\_TURMA\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,65 @@
+\doxysection{Horario Class Reference}
+\hypertarget{class_horario}{}\label{class_horario}\index{Horario@{Horario}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_aula}{Aula}} $>$ \& \mbox{\hyperlink{class_horario_a7c081467ad02a49909c57a2e4099395b}{get\+\_\+horario}} ()
+\item 
+void \mbox{\hyperlink{class_horario_aafa4ab4fec634c68b3bd3a70fb5646ab}{adicionar\+\_\+aula}} (\mbox{\hyperlink{class_aula}{Aula}} aula)
+\item 
+void \mbox{\hyperlink{class_horario_ab2d0b99c280c8a49abf56ad9101e3a96}{remover\+\_\+aula}} (\mbox{\hyperlink{class_aula}{Aula}} aula)
+\item 
+void \mbox{\hyperlink{class_horario_abbed4bebbe798d672b4b463b0f051beb}{print\+\_\+horario}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_horario_aafa4ab4fec634c68b3bd3a70fb5646ab}\label{class_horario_aafa4ab4fec634c68b3bd3a70fb5646ab} 
+\index{Horario@{Horario}!adicionar\_aula@{adicionar\_aula}}
+\index{adicionar\_aula@{adicionar\_aula}!Horario@{Horario}}
+\doxysubsubsection{\texorpdfstring{adicionar\_aula()}{adicionar\_aula()}}
+{\footnotesize\ttfamily void Horario\+::adicionar\+\_\+aula (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_aula}{Aula}}}]{aula }\end{DoxyParamCaption})}
+
+Adiciona uma aula ao horário 
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{class_aula}{Aula}} & com a aula que se vai adicionar ao horário\\
+\hline
+\end{DoxyParams}
+Time complexity\+: O(\+N) \Hypertarget{class_horario_a7c081467ad02a49909c57a2e4099395b}\label{class_horario_a7c081467ad02a49909c57a2e4099395b} 
+\index{Horario@{Horario}!get\_horario@{get\_horario}}
+\index{get\_horario@{get\_horario}!Horario@{Horario}}
+\doxysubsubsection{\texorpdfstring{get\_horario()}{get\_horario()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_aula}{Aula}} $>$ \& Horario\+::get\+\_\+horario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retorna um vetor de aulas que consistui um horário
+
+\begin{DoxyReturn}{Returns}
+vetor de aulas
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_horario_abbed4bebbe798d672b4b463b0f051beb}\label{class_horario_abbed4bebbe798d672b4b463b0f051beb} 
+\index{Horario@{Horario}!print\_horario@{print\_horario}}
+\index{print\_horario@{print\_horario}!Horario@{Horario}}
+\doxysubsubsection{\texorpdfstring{print\_horario()}{print\_horario()}}
+{\footnotesize\ttfamily void Horario\+::print\+\_\+horario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Faz print do horário\+: imprime cada aula no horário
+
+Time complexity\+: O(\+N) \Hypertarget{class_horario_ab2d0b99c280c8a49abf56ad9101e3a96}\label{class_horario_ab2d0b99c280c8a49abf56ad9101e3a96} 
+\index{Horario@{Horario}!remover\_aula@{remover\_aula}}
+\index{remover\_aula@{remover\_aula}!Horario@{Horario}}
+\doxysubsubsection{\texorpdfstring{remover\_aula()}{remover\_aula()}}
+{\footnotesize\ttfamily void Horario\+::remover\+\_\+aula (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_aula}{Aula}}}]{aula }\end{DoxyParamCaption})}
+
+Remove uma aula do horário
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{class_aula}{Aula}} & com a aula que se vai remover do horário\\
+\hline
+\end{DoxyParams}
+Time complexity\+: O(\+N\texorpdfstring{$\ast$}{*}log\+N) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Horario.\+h\item 
+Horario.\+cpp\end{DoxyCompactItemize}

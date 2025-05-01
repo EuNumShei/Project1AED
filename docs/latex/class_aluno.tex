@@ -1,0 +1,177 @@
+\doxysection{Aluno Class Reference}
+\hypertarget{class_aluno}{}\label{class_aluno}\index{Aluno@{Aluno}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_aluno_ab8b8efb8497a0e21fdc731254385f811}\label{class_aluno_ab8b8efb8497a0e21fdc731254385f811} 
+{\bfseries Aluno} (int aluno\+\_\+\+ID\+\_\+, string aluno\+\_\+nome\+\_\+, \mbox{\hyperlink{class_horario}{Horario}} horario\+\_\+, int ano\+\_\+)
+\item 
+string \mbox{\hyperlink{class_aluno_a1d2f26033a7ba65acc21c5ee1bd5e2f9}{get\+\_\+aluno\+\_\+nome}} () const
+\item 
+int \mbox{\hyperlink{class_aluno_a985e8e7267494a4937c8af1c1c6bb69b}{get\+\_\+aluno\+\_\+\+ID}} () const
+\item 
+\mbox{\hyperlink{class_horario}{Horario}} \& \mbox{\hyperlink{class_aluno_affc1e7de91564f00ef4547d55225cb00}{get\+\_\+horario}} ()
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_aluno_aa380accb34fed3286c12b47e7ba1fd3b}{get\+\_\+anos\+\_\+do\+\_\+aluno}} () const
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_aluno_a8d779b524f902f29083afde9b21f5ab3}{get\+\_\+cadeiras\+\_\+do\+\_\+aluno}} () const
+\item 
+void \mbox{\hyperlink{class_aluno_ad6152bc0114d6c0457e87800a9b0aae3}{adicionar\+\_\+cadeira\+\_\+ao\+\_\+aluno}} (const string \&nome\+\_\+cadeira)
+\item 
+void \mbox{\hyperlink{class_aluno_af7be7e58b60ebe334e153bf82e1d1f85}{remover\+\_\+cadeira\+\_\+ao\+\_\+aluno}} (const std\+::string \&nome\+\_\+cadeira)
+\item 
+void \mbox{\hyperlink{class_aluno_a12b71d676ec64855c1a68f81dd8d3dde}{print\+\_\+aluno}} ()
+\item 
+bool \mbox{\hyperlink{class_aluno_a429ac6278af132b78d5747e1e7ba2610}{ver\+\_\+se\+\_\+existe\+\_\+cadeira\+\_\+no\+\_\+aluno}} (string nome\+\_\+cadeira)
+\item 
+bool \mbox{\hyperlink{class_aluno_a13f697e4d03ba0a9d0292cf6d771ebe2}{aluno\+\_\+no\+\_\+ano}} (int ano)
+\item 
+void \mbox{\hyperlink{class_aluno_a1607aae1a304903efe3342f75f5f186a}{colocar\+\_\+anos\+\_\+no\+\_\+aluno}} ()
+\item 
+\Hypertarget{class_aluno_a47d9be48033779ca919f8a0f6b47774a}\label{class_aluno_a47d9be48033779ca919f8a0f6b47774a} 
+{\bfseries Aluno} (int aluno\+\_\+\+ID\+\_\+, const string \&aluno\+\_\+nome\+\_\+)
+\item 
+\Hypertarget{class_aluno_a7b088678c72b76df37ffc03c965d86f7}\label{class_aluno_a7b088678c72b76df37ffc03c965d86f7} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_aluno}{Aluno}} \&outro\+\_\+aluno) const
+\item 
+\Hypertarget{class_aluno_a2015485ae02fc1dfd925e5a166b92340}\label{class_aluno_a2015485ae02fc1dfd925e5a166b92340} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{class_aluno}{Aluno}} \&outro\+\_\+aluno) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_aluno_ad6152bc0114d6c0457e87800a9b0aae3}\label{class_aluno_ad6152bc0114d6c0457e87800a9b0aae3} 
+\index{Aluno@{Aluno}!adicionar\_cadeira\_ao\_aluno@{adicionar\_cadeira\_ao\_aluno}}
+\index{adicionar\_cadeira\_ao\_aluno@{adicionar\_cadeira\_ao\_aluno}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{adicionar\_cadeira\_ao\_aluno()}{adicionar\_cadeira\_ao\_aluno()}}
+{\footnotesize\ttfamily void Aluno\+::adicionar\+\_\+cadeira\+\_\+ao\+\_\+aluno (\begin{DoxyParamCaption}\item[{const string \&}]{nome\+\_\+cadeira }\end{DoxyParamCaption})}
+
+Adiciona uma cadeira à lista de cadeiras do aluno
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & com o código da cadeira que queremos adicionar ao aluno\\
+\hline
+\end{DoxyParams}
+Time complexity\+: O(log\+N) \Hypertarget{class_aluno_a13f697e4d03ba0a9d0292cf6d771ebe2}\label{class_aluno_a13f697e4d03ba0a9d0292cf6d771ebe2} 
+\index{Aluno@{Aluno}!aluno\_no\_ano@{aluno\_no\_ano}}
+\index{aluno\_no\_ano@{aluno\_no\_ano}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{aluno\_no\_ano()}{aluno\_no\_ano()}}
+{\footnotesize\ttfamily bool Aluno\+::aluno\+\_\+no\+\_\+ano (\begin{DoxyParamCaption}\item[{int}]{ano }\end{DoxyParamCaption})}
+
+Verifica se o aluno frequenta cadeiras de um determinado ano 
+\begin{DoxyParams}{Parameters}
+{\em int} & com o ano que queremos verificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se o aluno estiver inscrito na cadeira do ano, caso contrário false
+\end{DoxyReturn}
+Time complexity\+: O(\+N) \Hypertarget{class_aluno_a1607aae1a304903efe3342f75f5f186a}\label{class_aluno_a1607aae1a304903efe3342f75f5f186a} 
+\index{Aluno@{Aluno}!colocar\_anos\_no\_aluno@{colocar\_anos\_no\_aluno}}
+\index{colocar\_anos\_no\_aluno@{colocar\_anos\_no\_aluno}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{colocar\_anos\_no\_aluno()}{colocar\_anos\_no\_aluno()}}
+{\footnotesize\ttfamily void Aluno\+::colocar\+\_\+anos\+\_\+no\+\_\+aluno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Coloca no vetor anos\+\_\+do\+\_\+aluno os anos das cadeiras em que o aluno está inscrito
+
+Time complexity\+: O(N²) \Hypertarget{class_aluno_a985e8e7267494a4937c8af1c1c6bb69b}\label{class_aluno_a985e8e7267494a4937c8af1c1c6bb69b} 
+\index{Aluno@{Aluno}!get\_aluno\_ID@{get\_aluno\_ID}}
+\index{get\_aluno\_ID@{get\_aluno\_ID}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{get\_aluno\_ID()}{get\_aluno\_ID()}}
+{\footnotesize\ttfamily int Aluno\+::get\+\_\+aluno\+\_\+\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o código do aluno
+
+\begin{DoxyReturn}{Returns}
+int com o código do aluno
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_aluno_a1d2f26033a7ba65acc21c5ee1bd5e2f9}\label{class_aluno_a1d2f26033a7ba65acc21c5ee1bd5e2f9} 
+\index{Aluno@{Aluno}!get\_aluno\_nome@{get\_aluno\_nome}}
+\index{get\_aluno\_nome@{get\_aluno\_nome}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{get\_aluno\_nome()}{get\_aluno\_nome()}}
+{\footnotesize\ttfamily string Aluno\+::get\+\_\+aluno\+\_\+nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o nome do aluno
+
+\begin{DoxyReturn}{Returns}
+string com o nome do aluno Time complexity\+: O(1) 
+\end{DoxyReturn}
+\Hypertarget{class_aluno_aa380accb34fed3286c12b47e7ba1fd3b}\label{class_aluno_aa380accb34fed3286c12b47e7ba1fd3b} 
+\index{Aluno@{Aluno}!get\_anos\_do\_aluno@{get\_anos\_do\_aluno}}
+\index{get\_anos\_do\_aluno@{get\_anos\_do\_aluno}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{get\_anos\_do\_aluno()}{get\_anos\_do\_aluno()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Aluno\+::get\+\_\+anos\+\_\+do\+\_\+aluno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna os anos das cadeiras em que o aluno está inscrito
+
+\begin{DoxyReturn}{Returns}
+vetor de inteiros com os anos em que o aluno está inscrito
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_aluno_a8d779b524f902f29083afde9b21f5ab3}\label{class_aluno_a8d779b524f902f29083afde9b21f5ab3} 
+\index{Aluno@{Aluno}!get\_cadeiras\_do\_aluno@{get\_cadeiras\_do\_aluno}}
+\index{get\_cadeiras\_do\_aluno@{get\_cadeiras\_do\_aluno}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{get\_cadeiras\_do\_aluno()}{get\_cadeiras\_do\_aluno()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Aluno\+::get\+\_\+cadeiras\+\_\+do\+\_\+aluno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna as cadeiras em que o aluno está inscrito
+
+\begin{DoxyReturn}{Returns}
+vetor com stings com os códigos das cadeiras do aluno
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_aluno_affc1e7de91564f00ef4547d55225cb00}\label{class_aluno_affc1e7de91564f00ef4547d55225cb00} 
+\index{Aluno@{Aluno}!get\_horario@{get\_horario}}
+\index{get\_horario@{get\_horario}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{get\_horario()}{get\_horario()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_horario}{Horario}} \& Aluno\+::get\+\_\+horario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retorna o horário do aluno
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_horario}{Horario} com o horário do aluno
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_aluno_a12b71d676ec64855c1a68f81dd8d3dde}\label{class_aluno_a12b71d676ec64855c1a68f81dd8d3dde} 
+\index{Aluno@{Aluno}!print\_aluno@{print\_aluno}}
+\index{print\_aluno@{print\_aluno}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{print\_aluno()}{print\_aluno()}}
+{\footnotesize\ttfamily void Aluno\+::print\+\_\+aluno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Faz print de um aluno
+
+no formato\+: nome do aluno \texorpdfstring{$\vert$}{|} codigo do aluno
+
+Time complexity\+: O(1) \Hypertarget{class_aluno_af7be7e58b60ebe334e153bf82e1d1f85}\label{class_aluno_af7be7e58b60ebe334e153bf82e1d1f85} 
+\index{Aluno@{Aluno}!remover\_cadeira\_ao\_aluno@{remover\_cadeira\_ao\_aluno}}
+\index{remover\_cadeira\_ao\_aluno@{remover\_cadeira\_ao\_aluno}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{remover\_cadeira\_ao\_aluno()}{remover\_cadeira\_ao\_aluno()}}
+{\footnotesize\ttfamily void Aluno\+::remover\+\_\+cadeira\+\_\+ao\+\_\+aluno (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome\+\_\+cadeira }\end{DoxyParamCaption})}
+
+Remove uma cadeira ao aluno
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & com o código da cadeira que queremos remover ao aluno\\
+\hline
+\end{DoxyParams}
+Time complexity\+: O(\+N\texorpdfstring{$\ast$}{*}log\+N) \Hypertarget{class_aluno_a429ac6278af132b78d5747e1e7ba2610}\label{class_aluno_a429ac6278af132b78d5747e1e7ba2610} 
+\index{Aluno@{Aluno}!ver\_se\_existe\_cadeira\_no\_aluno@{ver\_se\_existe\_cadeira\_no\_aluno}}
+\index{ver\_se\_existe\_cadeira\_no\_aluno@{ver\_se\_existe\_cadeira\_no\_aluno}!Aluno@{Aluno}}
+\doxysubsubsection{\texorpdfstring{ver\_se\_existe\_cadeira\_no\_aluno()}{ver\_se\_existe\_cadeira\_no\_aluno()}}
+{\footnotesize\ttfamily bool Aluno\+::ver\+\_\+se\+\_\+existe\+\_\+cadeira\+\_\+no\+\_\+aluno (\begin{DoxyParamCaption}\item[{string}]{nome\+\_\+cadeira }\end{DoxyParamCaption})}
+
+Verifica se o aluno está inscrito em uma cadeira
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & com o código da cadeira que queremos verificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se o aluno estiver inscrito na cadeira, caso contrário false
+\end{DoxyReturn}
+Time complexity\+: O(\+N) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Aluno.\+h\item 
+Aluno.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,50 @@
+\doxysection{Aluno.\+h}
+\hypertarget{_aluno_8h_source}{}\label{_aluno_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Utiizador\ on\ 12/10/2023.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ AED2324\_P03\_ALUNO\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ AED2324\_P03\_ALUNO\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Horario.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_aluno}{Aluno}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ aluno\_ID;}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ aluno\_nome;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_horario}{Horario}}\ horario;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ vector<int>\ anos\_do\_aluno;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ vector<string>\ cadeiras\_do\_aluno;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_aluno}{Aluno}}(\textcolor{keywordtype}{int}\ aluno\_ID\_,\ \textcolor{keywordtype}{string}\ aluno\_nome\_,\ \mbox{\hyperlink{class_horario}{Horario}}\ horario\_,\ \textcolor{keywordtype}{int}\ ano\_);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_aluno_a1d2f26033a7ba65acc21c5ee1bd5e2f9}{get\_aluno\_nome}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_aluno_a985e8e7267494a4937c8af1c1c6bb69b}{get\_aluno\_ID}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_horario}{Horario}}\ \&\ \mbox{\hyperlink{class_aluno_affc1e7de91564f00ef4547d55225cb00}{get\_horario}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ vector<int>\ \mbox{\hyperlink{class_aluno_aa380accb34fed3286c12b47e7ba1fd3b}{get\_anos\_do\_aluno}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ vector<string>\ \mbox{\hyperlink{class_aluno_a8d779b524f902f29083afde9b21f5ab3}{get\_cadeiras\_do\_aluno}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_aluno_ad6152bc0114d6c0457e87800a9b0aae3}{adicionar\_cadeira\_ao\_aluno}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ nome\_cadeira);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_aluno_af7be7e58b60ebe334e153bf82e1d1f85}{remover\_cadeira\_ao\_aluno}}(\textcolor{keyword}{const}\ std::string\ \&nome\_cadeira);}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_aluno_a12b71d676ec64855c1a68f81dd8d3dde}{print\_aluno}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_aluno_a429ac6278af132b78d5747e1e7ba2610}{ver\_se\_existe\_cadeira\_no\_aluno}}(\textcolor{keywordtype}{string}\ nome\_cadeira);}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_aluno_a13f697e4d03ba0a9d0292cf6d771ebe2}{aluno\_no\_ano}}(\textcolor{keywordtype}{int}\ ano);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_aluno_a1607aae1a304903efe3342f75f5f186a}{colocar\_anos\_no\_aluno}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_aluno}{Aluno}}(\textcolor{keywordtype}{int}\ aluno\_ID\_,\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ aluno\_nome\_):\ aluno\_ID(aluno\_ID\_),\ aluno\_nome(aluno\_nome\_)\ \{\}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_aluno}{Aluno}}\&\ outro\_aluno)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>aluno\_ID\ ==\ outro\_aluno.aluno\_ID;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ operator<(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_aluno}{Aluno}}\&\ outro\_aluno)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>aluno\_ID\ <\ outro\_aluno.aluno\_ID;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//AED2324\_P03\_ALUNO\_H}}
+
+\end{DoxyCode}

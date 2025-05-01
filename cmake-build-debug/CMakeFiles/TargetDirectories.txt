@@ -1,0 +1,4 @@
+C:/Users/Utiizador/Desktop/AED_NOVA/AED2324_PRJ1_G35/cmake-build-debug/CMakeFiles/Doxygen.dir
+C:/Users/Utiizador/Desktop/AED_NOVA/AED2324_PRJ1_G35/cmake-build-debug/CMakeFiles/AED2324_PRJ1_G35.dir
+C:/Users/Utiizador/Desktop/AED_NOVA/AED2324_PRJ1_G35/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Utiizador/Desktop/AED_NOVA/AED2324_PRJ1_G35/cmake-build-debug/CMakeFiles/rebuild_cache.dir

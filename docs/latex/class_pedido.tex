@@ -1,0 +1,93 @@
+\doxysection{Pedido Class Reference}
+\hypertarget{class_pedido}{}\label{class_pedido}\index{Pedido@{Pedido}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pedido_ac808a41dff2b00336993c9df047d2fe8}\label{class_pedido_ac808a41dff2b00336993c9df047d2fe8} 
+{\bfseries Pedido} (const string \&cadeira\+\_\+1\+\_\+, const string \&turma\+\_\+1\+\_\+, const string \&turma\+\_\+2\+\_\+, const string \&pedido\+\_\+q\+\_\+foi\+\_\+feito\+\_\+)
+\item 
+\Hypertarget{class_pedido_ac2686734e171511ce0e9c0a08141babb}\label{class_pedido_ac2686734e171511ce0e9c0a08141babb} 
+int {\bfseries get\+\_\+numero\+\_\+pedido} () const
+\item 
+string \mbox{\hyperlink{class_pedido_a7798fbe7c16d97e5c789143222e4cd67}{get\+\_\+cadeira\+\_\+1}} () const
+\item 
+string \mbox{\hyperlink{class_pedido_a7a9241918f462472de027975639935aa}{get\+\_\+turma\+\_\+1}} () const
+\item 
+string \mbox{\hyperlink{class_pedido_aa413d09680a17d1f7734434679ed3b31}{get\+\_\+turma\+\_\+2}} () const
+\item 
+string \mbox{\hyperlink{class_pedido_a07442a83a1ba4f71e0b9480bccb2475b}{get\+\_\+pedido\+\_\+q\+\_\+foi\+\_\+feito}} () const
+\item 
+void \mbox{\hyperlink{class_pedido_ac3824210de7d3dd9f62285a5393196cb}{print\+\_\+pedido}} () const
+\item 
+\Hypertarget{class_pedido_af1d5bc326fd9fc5411ab3819265552e7}\label{class_pedido_af1d5bc326fd9fc5411ab3819265552e7} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{class_pedido}{Pedido}} \&outro\+\_\+pedido) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pedido_a2fad2943b1ed98ec44c653dd8a272815}\label{class_pedido_a2fad2943b1ed98ec44c653dd8a272815} 
+static int {\bfseries get\+\_\+n\+\_\+ultimo\+\_\+pedido} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pedido_a7798fbe7c16d97e5c789143222e4cd67}\label{class_pedido_a7798fbe7c16d97e5c789143222e4cd67} 
+\index{Pedido@{Pedido}!get\_cadeira\_1@{get\_cadeira\_1}}
+\index{get\_cadeira\_1@{get\_cadeira\_1}!Pedido@{Pedido}}
+\doxysubsubsection{\texorpdfstring{get\_cadeira\_1()}{get\_cadeira\_1()}}
+{\footnotesize\ttfamily string Pedido\+::get\+\_\+cadeira\+\_\+1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna a cadeira que vai ser alterada no horário do aluno
+
+\begin{DoxyReturn}{Returns}
+string com o código da cadeira
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_pedido_a07442a83a1ba4f71e0b9480bccb2475b}\label{class_pedido_a07442a83a1ba4f71e0b9480bccb2475b} 
+\index{Pedido@{Pedido}!get\_pedido\_q\_foi\_feito@{get\_pedido\_q\_foi\_feito}}
+\index{get\_pedido\_q\_foi\_feito@{get\_pedido\_q\_foi\_feito}!Pedido@{Pedido}}
+\doxysubsubsection{\texorpdfstring{get\_pedido\_q\_foi\_feito()}{get\_pedido\_q\_foi\_feito()}}
+{\footnotesize\ttfamily string Pedido\+::get\+\_\+pedido\+\_\+q\+\_\+foi\+\_\+feito (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna o tipo de pedido realizado
+
+\begin{DoxyReturn}{Returns}
+string com o tipo de pedido
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_pedido_a7a9241918f462472de027975639935aa}\label{class_pedido_a7a9241918f462472de027975639935aa} 
+\index{Pedido@{Pedido}!get\_turma\_1@{get\_turma\_1}}
+\index{get\_turma\_1@{get\_turma\_1}!Pedido@{Pedido}}
+\doxysubsubsection{\texorpdfstring{get\_turma\_1()}{get\_turma\_1()}}
+{\footnotesize\ttfamily string Pedido\+::get\+\_\+turma\+\_\+1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna a turma atual que o aluno está inscrito
+
+\begin{DoxyReturn}{Returns}
+string com o código da turma
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_pedido_aa413d09680a17d1f7734434679ed3b31}\label{class_pedido_aa413d09680a17d1f7734434679ed3b31} 
+\index{Pedido@{Pedido}!get\_turma\_2@{get\_turma\_2}}
+\index{get\_turma\_2@{get\_turma\_2}!Pedido@{Pedido}}
+\doxysubsubsection{\texorpdfstring{get\_turma\_2()}{get\_turma\_2()}}
+{\footnotesize\ttfamily string Pedido\+::get\+\_\+turma\+\_\+2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Retorna a turma para qual o aluno se quer inscrever
+
+\begin{DoxyReturn}{Returns}
+string com o código da turma
+\end{DoxyReturn}
+Time complexity\+: O(1) \Hypertarget{class_pedido_ac3824210de7d3dd9f62285a5393196cb}\label{class_pedido_ac3824210de7d3dd9f62285a5393196cb} 
+\index{Pedido@{Pedido}!print\_pedido@{print\_pedido}}
+\index{print\_pedido@{print\_pedido}!Pedido@{Pedido}}
+\doxysubsubsection{\texorpdfstring{print\_pedido()}{print\_pedido()}}
+{\footnotesize\ttfamily void Pedido\+::print\+\_\+pedido (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Faz print de um pedido
+
+no formato\+: número do pedido -\/ tipo de pedido -\/ cadeira alterada -\/ turma anterior turma que o aluno pretende ingressar
+
+Time complexity\+: O(1) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pedido.\+h\item 
+Pedido.\+cpp\end{DoxyCompactItemize}
